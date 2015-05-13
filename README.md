@@ -19,4 +19,6 @@ O básico do projeto até agora:
       
   A camada de negócio e repositório contém classes básicas para serem herdadas. Essas classes fazem quase todo o trabalho e o programador só irá precisar implementar o que for fora do padrão.
   
-  O projeto ainda está em desenvolvimento. Irei colocar um exemplo com banco de dados SQLITE.
+  O projeto ainda está em desenvolvimento e serve para aqueles que queiram adicionar uma arquitetura em camadas para projetos mais antigos com .NET 3.5. 
+Para projetos mais novos, sugiro algo mais atual com Entity Framework e Asp.NET MVC com bootstrap.
+Irei colocar um exemplo com banco de dados SQLITE.
