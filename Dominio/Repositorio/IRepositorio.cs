@@ -60,26 +60,13 @@ namespace ArquiteturaBasica.Dominio.Repositorio
         /// Salva no repositório a entidade do modelo ainda não salva.
         /// </summary>
         /// <param name="entity">entidade do modelo ainda não salva</param>
-        void Insert(E entity);
-
-        /// <summary>
-        /// Salva no repositório a(s) entidade(s) do modelo ainda não salva(s).
-        /// </summary>
-        /// <param name="entity">entidade(s) do modelo a ser(em) salva(s)</param>
-        /// <returns>lista com a(s) chave(s) primária(s) da(s) entidade(s) do modelo indicada(s)</returns>
-        void Insert(params E[] entity);
+        void Insert(E entity);       
 
         /// <summary>
         /// Salva ou atualiza a entidade do modelo.
         /// </summary>
         /// <param name="entity">entidade a ser salva</param>
-        void Update(E entity);
-
-        /// <summary>
-        /// Salva ou atualiza a(s) entidade(s) do modelo.
-        /// </summary>
-        /// <param name="entity">entidade(s) a ser(em) salva(s)</param>
-        void Update(params E[] entity);
+        void Update(E entity);       
 
         /// <summary>
         /// Remove do repositório a entidade do modelo indicada.
