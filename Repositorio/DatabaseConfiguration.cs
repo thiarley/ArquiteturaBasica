@@ -29,7 +29,7 @@ namespace ArquiteturaPadrao.Repositorio
             {
                 SchemaExport ex = new SchemaExport(_configuration);
                 ex.SetDelimiter(";");
-                ex.SetOutputFile(@"DabiDatabaseCreation.sql");
+                ex.SetOutputFile(@"DatabaseCreation.sql");
                 ex.Execute(true, false,false);
             }
             catch (Exception)

@@ -29,8 +29,8 @@ namespace ArquiteturaBasica.Comuns.Seguranca
         /// Representação de valor em base 64 (Chave Interna)    
         /// O Valor representa a transformação para base64 de     
         /// um conjunto de 32 caracteres (8 * 32 = 256bits)    
-        /// A chave é: "Criptografia projeto DabiAtlante"
-        /// Convert.ToBase64String(System.Text.ASCIIEncoding.ASCII.GetBytes("Criptografia projeto DabiAtlante"))
+        /// A chave é: "Criptografia"
+        /// Convert.ToBase64String(System.Text.ASCIIEncoding.ASCII.GetBytes("Criptografia xxxxxx"))
         /// </summary>     
         protected const string cryptoKey = "Q3JpcHRvZ3JhZmlhIHByb2pldG8gRGFiaUF0bGFudGU=";
 
