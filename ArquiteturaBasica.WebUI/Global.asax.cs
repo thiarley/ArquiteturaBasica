@@ -14,6 +14,7 @@ namespace ArquiteturaBasica
 
         protected override Ninject.IKernel CreateKernel()
         {
+           
             ServiceLocator.Initialize("ArquiteturaBasica.Negocio", "ArquiteturaBasica.Repositorio");
             return ServiceLocator.Kernel;
         }

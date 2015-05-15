@@ -29,8 +29,8 @@ namespace ArquiteturaPadrao.Repositorio
             {
                 SchemaExport ex = new SchemaExport(_configuration);
                 ex.SetDelimiter(";");
-                ex.SetOutputFile(@"DatabaseCreation.sql");
-                ex.Execute(true, false,false);
+                ex.SetOutputFile(@"c:\users\thiarley\DatabaseCreation2.sql");
+                ex.Execute(false, false,false);
             }
             catch (Exception)
             {

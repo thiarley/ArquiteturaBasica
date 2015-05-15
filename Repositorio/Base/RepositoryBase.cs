@@ -291,6 +291,7 @@ namespace ArquiteturaBasica.Concrete.Base
         {
             try
             {
+
                 Transact(() =>
                         Session.Delete(entity)
                   );

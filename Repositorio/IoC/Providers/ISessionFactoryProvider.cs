@@ -20,8 +20,8 @@ namespace ArquiteturaBasica.Repositorio.IoC.Providers
 
             ISessionFactory factory = null;
 
-            factory = Fluently.Configure().Database(MySQLConfiguration.Standard
-                                       .ConnectionString(c => c.FromConnectionStringWithKey("EntityModelHB")))
+            factory = Fluently.Configure().Database(MsSqlConfiguration.MsSql2012
+                                       .ConnectionString(c => c.FromConnectionStringWithKey("TESTE")))
                                        .Mappings(n => n.FluentMappings.AddFromAssemblyOf<UsuarioMap>())
                                        .ExposeConfiguration(c => DatabaseConfiguration.Inicialize(c))
                                        .BuildSessionFactory();
