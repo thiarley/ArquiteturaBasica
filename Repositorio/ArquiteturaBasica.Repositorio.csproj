@@ -74,7 +74,6 @@
     <Compile Include="DatabaseConfiguration.cs" />
     <Compile Include="IoC\ISessionModule.cs" />
     <Compile Include="IoC\Providers\ISessionFactoryProvider.cs" />
-    <Compile Include="IoC\Providers\ISessionProvider.cs" />
     <Compile Include="IoC\RepositotyModule.cs" />
     <Compile Include="Mapping\UsuarioMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
