@@ -30,7 +30,9 @@ namespace ArquiteturaBasica
         {
             if (!_initialized)
             {
-                _kernel = new StandardKernel();
+                if(_kernel == null)
+                    _kernel = new StandardKernel();
+
                 _kernel.Load(AppDomain.CurrentDomain.GetAssemblies());
 
                 _initialized = true;
@@ -41,7 +43,8 @@ namespace ArquiteturaBasica
         {
             if (!_initialized)
             {
-                _kernel = new StandardKernel();
+                if (_kernel == null)
+                    _kernel = new StandardKernel();
 
                 IList<Assembly> list = new List<Assembly>();
 
@@ -61,7 +64,8 @@ namespace ArquiteturaBasica
         /// <param name="kernel">Kernel do Ninject</param>
         internal static void Initialize(params INinjectModule[] modules)
         {
-            _kernel = new StandardKernel(modules);
+            if (_kernel == null)
+                _kernel = new StandardKernel(modules);
 
         }
 
@@ -76,6 +80,7 @@ namespace ArquiteturaBasica
         /// <returns>Uma instancia de <typeparamref name="T"/></returns>
         public static T Get<T>()
         {
+
             return _kernel.Get<T>();
         }
 

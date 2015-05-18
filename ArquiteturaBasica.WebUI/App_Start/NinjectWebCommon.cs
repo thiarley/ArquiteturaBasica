@@ -43,7 +43,7 @@ namespace ArquiteturaBasica.WebUI.App_Start
             try
             {
                 kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
-                kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
+                kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();               
 
                 RegisterServices(kernel);
                 return kernel;
@@ -61,6 +61,8 @@ namespace ArquiteturaBasica.WebUI.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            ServiceLocator.Kernel = kernel;
+            ServiceLocator.Initialize("ArquiteturaBasica.Negocio", "ArquiteturaBasica.Repositorio");
         }        
     }
 }

@@ -18,19 +18,19 @@ namespace ArquiteturaBasica
         protected void Page_Load(object sender, EventArgs e)
         {
             Usuario us = new Usuario();
-            us.Email = "thi75756adasd75675arley@gmail.com";
-            us.Login = "thiarlasdey2";
-            us.Nome = "thiarlasdey2";
-            us.Senha = "pasdasw2";
+            us.Email = "thi7575try6ahgdasd75675arley@gmail.com";
+            us.Login = "thityrhgarlasdey2";
+            us.Nome = "thiatyrrhglasdey2";
+            us.Senha = "pasytrythgdasw2";
 
 
 
             _usuarioNegocio = ServiceLocator.Get<IUsuarioNegocio>();
 
-            //_usuarioNegocio.Insert(us);
+            _usuarioNegocio.Insert(us);
 
             _usuarioNegocio.GetAll();
-            Usuario delete = _usuarioNegocio.GetByID(2);
+            Usuario delete = _usuarioNegocio.GetByID(4);
 
             _usuarioNegocio.Delete(delete);
         }
