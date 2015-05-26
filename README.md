@@ -1,10 +1,10 @@
 # ArquiteturaBasica
 
-Este é um projeto de uma arquitetura básica para projetos com Web com .NET 3.5.
+Este é um projeto de uma arquitetura básica para projetos com Web com .NET 4.
 O básico do projeto até agora:
 
-1. Asp.NET 3.5
-2. NHibernate 3.2
+1. Asp.NET 4
+2. NHibernate 4
 3. Ninject para injeção de dependência, implementação do padrão de projeto ServiceLocator e manutenção do ciclo de vida do ISession do NHibernate.
 4. Padrão de em Camadas:
   WEB
